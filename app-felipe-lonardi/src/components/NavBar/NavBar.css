@@ -1,0 +1,42 @@
+.NavBar {
+    display: flex;
+    background-color: rgb(130, 161, 189);
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: x-large;
+
+}
+
+.Categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Boton {
+    background-color: rgb(42, 129, 170);
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+
+}
+
+.List {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+
+}
+.li{
+    display: flex;
+    padding: 85px;
+}
