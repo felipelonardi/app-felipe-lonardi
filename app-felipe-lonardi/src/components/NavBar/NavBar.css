@@ -1,12 +1,13 @@
 .NavBar {
     display: flex;
-    background-color: rgb(130, 161, 189);
+    background-color: rgb(8, 85, 99);
     justify-content: space-around;
     align-items: center;
     height: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: x-large;
+    height: 90px;
 
 }
 

@@ -1,0 +1,19 @@
+.decrement {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgb(15, 96, 99);
+    color: white;
+    font-size: x-large;
+}
+
+.contenedorBotones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgb(15, 96, 99) ;
+    border-radius: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 10px;
+}
