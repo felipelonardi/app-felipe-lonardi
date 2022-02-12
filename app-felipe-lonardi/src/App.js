@@ -7,6 +7,7 @@ import FunctionCounter from './components/Counter/counter';
 
 
 
+
 function App() {
   return (
     <div className="App">
