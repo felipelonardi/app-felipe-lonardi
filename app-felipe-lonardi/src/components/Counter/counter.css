@@ -1,19 +1,43 @@
-.decrement {
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+.decrement{
+    position: relative;
+    bottom: 50px;
     height: 50px;
     width: 50px;
-    border-radius: 25px;
-    background-color: rgb(15, 96, 99);
-    color: white;
+    border-radius: 50%;
+    font-family: "Didact Gothic";
     font-size: x-large;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+
 }
 
-.contenedorBotones {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 2px solid rgb(15, 96, 99) ;
-    border-radius: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
-    padding: 10px;
+.decrement:hover{
+    background-color: black;
+    color: white;
+}
+.contador{
+    position: relative;
+    bottom: 75px;
+}
+
+.agregar-carrito{
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+    height: auto;
+    font-family: "Didact Gothic";
+    font-size: large;
+    transition: ease-in 0.1s;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.agregar-carrito:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }

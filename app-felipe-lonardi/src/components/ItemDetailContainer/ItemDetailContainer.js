@@ -1,21 +1,20 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import './ItemListContainer.css'
 import FunctionCounter from '../Counter/counter'
 import { products } from '../products/product'
-import { traerProductos } from '../products/product'
-import ItemList from '../ItemList/ItemList'
+import { traerProducto } from '../products/product'
+import ItemDetail from '../ItemDetail/ItemDetail';
 import Item from '../Item/Item'
 
-const ItemListContainer = ({greeting}) => {
+const ItemDetailContainer = ({greeting}) => {
 
-    const [products, setProducts] = useState([]);
+    const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        traerProductos
+        traerProducto
             .then((res) => {
-                setProducts(res);
+                setProduct(res);
             })
             .catch((error) => {
                 console.log(error);
@@ -30,11 +29,11 @@ const ItemListContainer = ({greeting}) => {
             <h2 className='greeting'>
             {greeting}
             </h2>
-            <ItemList products = {products}/>
+            <ItemDetail products = {products}/>
         </div>
         
     )
   
     
 }
-export default ItemListContainer
+export default ItemDetailContainer

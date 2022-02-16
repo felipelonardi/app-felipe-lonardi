@@ -20,14 +20,14 @@ const FunctionCounter = ({stock, initial, onAdd}) => {
 
     return (
         <>
-            <h3> Function Counter</h3>
-            <h3>{count}</h3>
+            
+            <h3 className='contador'>{count}</h3>
         <div className = 'contenedorBotones'>
             <button className = 'decrement' onClick={decrement}> - </button>
             <button className = 'decrement' onClick={increment}> + </button>
         </div>
         <div>
-            <button onClick = {()=> onAdd(count)}>Agregar al Carrito</button>
+            <button className='agregar-carrito' onClick = {()=> onAdd(count)}>Agregar al Carrito</button>
         </div>
         </>
     )

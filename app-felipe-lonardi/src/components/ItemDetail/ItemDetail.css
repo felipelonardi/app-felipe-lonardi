@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+.Item-list{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.parrafo-descripcion{
+    position: relative;
+    margin-bottom: 80px;
+    padding: 10px;
+    margin-top: -100px;
+    font-family: "Didact Gothic";
+    font-size: large;
+
+}

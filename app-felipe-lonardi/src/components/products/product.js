@@ -1,29 +1,30 @@
 export const products = [  
     {
         id : 1,
-        name : 'Auriculares',
+        name : 'Nike Sb Dunk Low',
         stock: 10,
-        price: 6500,
-        img: " https://res.cloudinary.com/dqbu1gefv/image/upload/v1644697400/ath-anc700btbk_01_skdngx.png",
-        category: 'Headphone',
+        price: 17500,
+        img: " https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/6a00eff0-8215-423a-b071-38d1bb050653/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
+        category: 'Sb',
     },
     {
         id : 2,
-        name : 'Mouse',
+        name : 'Air Jordan 1',
         stock: 5,
-        price: 1750,
-        img: "https://res.cloudinary.com/dqbu1gefv/image/upload/v1644697451/m607-1-11-8151d583dfb13328b415936980307637-640-0_dtxide.png",
-        category: 'Mouse',
+        price: 23500,
+        img: "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/07898c4c-845f-4d47-ab71-7f8a3ccb4906/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
+        category: 'Jordan',
         
     },
     {
         id : 3,
-        name : 'Teclado',
+        name : 'Air Force 1',
         stock: 7,
-        price: 5600,
-        img: "https://res.cloudinary.com/dqbu1gefv/image/upload/v1644697514/rnnm-1_goxw19.png",
-        category: 'Keyboard',
+        price: 22900,
+        img: "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/17e9f8d8-10ca-4eb7-a9df-787698396ae9/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
+        category: 'Airforce',
     },
+    
 ];
 console.log(products);
 
@@ -32,5 +33,11 @@ export const traerProductos = new Promise ((resolve, reject)=>{
         resolve(products);
     },2000);
 });
+
+export const traerProducto = new Promise((resolve, reject) =>{
+    setTimeout(()=>{
+        resolve(products[2])
+    },2000);
+})
 
  

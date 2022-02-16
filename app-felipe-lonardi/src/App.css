@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+
+.site-footer {
+  background-color: #000000;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px ;
+}
+
+#social-wrapper {
+	text-align: center;
+}
+
+.social-wrapper ul li {
+	display: inline;
+	margin: 0 5px;
+  padding: 50px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon{
+	margin-top: .625em;
+	width: 40px;
+	height: 40px;
+	opacity: .6;
+  border-radius: 25px;
+}
+
+.footer-nav p {
+	text-align: center;
+}
+
+.created{
+  color:white;
+  font-family: "Didact Gothic" ;
+  font-weight: lighter;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300;400&family=Roboto:wght@300&display=swap');

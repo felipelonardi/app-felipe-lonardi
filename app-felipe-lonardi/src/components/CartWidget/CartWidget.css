@@ -1,19 +1,21 @@
 .Cart{
     display: flex;
-    width: 70px;
+    width: 60px;
     height: auto;
     margin-right: 100px ;
 }
 .counterCarrito {
+    width: 150px;
     display: flex;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
 .numberCarrito{
-    display: flex;
-    color : white;
+    position: relative;
+    right: 30%;
+    color : black;
     font-family: Verdana;
     
 }

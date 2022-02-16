@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
 .NavBar {
     display: flex;
-    background-color: rgb(8, 85, 99);
+    background-color: rgb(253, 253, 253);
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    font-family: "Didact Gothic";
+    color: black;
     font-size: x-large;
     height: 90px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }
 
@@ -20,7 +24,7 @@
 .Boton {
     background-color: rgb(42, 129, 170);
     border-radius: 10px;
-    color: white;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
 
@@ -33,11 +37,19 @@
 }
 
 .a{
+    position: relative;
+    left: 50%;
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 .li{
     display: flex;
     padding: 85px;
+}
+
+.Logo-nike{
+    height: 40px;
+    position: relative;
+    left: 100px;
 }

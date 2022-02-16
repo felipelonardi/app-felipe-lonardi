@@ -1,10 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:ital,wght@1,100&family=Quicksand:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
 .foto-producto{
+    font-family: "Didact Gothic" ;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 10px 50px;
-    width: 200px;
+    width: 400px;
+    height: auto;
     padding: 10px 10px;
     border-radius: 20px;
-
+    background-color: #F5F5F5;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.product-price{
+    position: relative;
+    bottom: 100px;
+    border: 1px solid black;
+    width: 250px;
+    margin-left: 18%;
+    padding: 5px;
+    border-radius: 10px;
+    transition: ease-in 0.1s;
+}
+
+.product-price:hover{
+    background-color: black;
+    color: white;
+}
+

@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
       <nav className ='NavBar'>
           <div>
-              <h3>Tienda</h3>
+              <img  className = 'Logo-nike' src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/420px-Logo_NIKE.svg.png"/>
           </div>
           <div>
               <ul className = 'List'>
