@@ -10,7 +10,7 @@ const Item = ({product}) =>{
             <img src={product.img} />
             <h2 className='product-price'>${product.price}</h2>
             <FunctionCounter />
-            <Link to={`/detail/${product.id}`}>Ver detalle</Link>
+            <Link to={`/detail/${product.id}`} className= "verdetalle">Ver detalle</Link>
             </div>
         </div>
         

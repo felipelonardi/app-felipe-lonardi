@@ -32,3 +32,21 @@
     color: white;
 }
 
+.verdetalle{
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    left: 38%;
+    color: black;
+    margin-bottom: 20px;
+    transition: ease-in 0.3s;
+
+}
+
+.verdetalle:hover{
+    background-color: goldenrod;
+    color: white;
+    border: 1px solid goldenrod;
+}

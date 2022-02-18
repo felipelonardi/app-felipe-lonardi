@@ -16,3 +16,18 @@
     font-size: large;
 
 }
+
+.categoria{
+    font-family: "Didact Gothic";
+    font-weight: bold;
+    position: relative;
+    margin-top: -100px;
+}
+
+.descripcion{
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}   
