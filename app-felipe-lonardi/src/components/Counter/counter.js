@@ -1,36 +1,41 @@
 import{useState} from 'react'
 import './counter.css'
 
-const FunctionCounter = ({stock, initial, onAdd}) => {
-    const [count, setCount] = useState (0)
 
-    const decrement = ()=>{
-        if (count > 0){
-            setCount (count - 1)
-        }
-    }
-
+const FunctionCounter = ({stock = 5, initial = 1, onAdd})=> {
+    const [quantity, setQuantity] = useState(initial)
+ 
     const increment = () => {
-        setCount (count + 1)
-        if (count >= 5){
-            alert("Excede stock disponible")
-            setCount (0)
+        if(quantity < stock) {
+            setQuantity(quantity+1)
         }
     }
+ 
+    const decrement = () => {
+        if(quantity > 0) {
+            setQuantity(quantity - 1)
+        }     
+    }
+ 
+    return(
+        <div align="center">          
+            <table >
+                <tbody>
+                    <tr>
+                        <td align="left"><button className="decrement" onClick={()=> decrement() }>-</button></td>
+                        <td align="center" className='decrement'>{quantity}</td>
+                        <td align="right"><button className="decrement" onClick={() => increment() }>+</button></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colSpan="5"><button className="agregar-carrito" onClick={() => onAdd(quantity)}>Agregar al carrito</button></td>
+                    </tr>
 
-    return (
-        <>
-            
-            <h3 className='contador'>{count}</h3>
-        <div className = 'contenedorBotones'>
-            <button className = 'decrement' onClick={decrement}> - </button>
-            <button className = 'decrement' onClick={increment}> + </button>
+                </tbody>
+            </table>       
         </div>
-        <div>
-            <button className='agregar-carrito' onClick = {()=> onAdd(count)}>Agregar al Carrito</button>
-        </div>
-        </>
     )
-}
+ 
+ }
 
 export default FunctionCounter
+

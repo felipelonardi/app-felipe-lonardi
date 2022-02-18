@@ -1,40 +1,33 @@
+
 import React from 'react'
 import { useEffect, useState } from 'react';
 import './ItemListContainer.css'
-import FunctionCounter from '../Counter/counter'
-import { products } from '../products/product'
-import { traerProductos } from '../products/product'
+import { getProducts } from '../products/product'
 import ItemList from '../ItemList/ItemList'
-import Item from '../Item/Item'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState([])
 
+    
     useEffect(() => {
-        traerProductos
-            .then((res) => {
-                setProducts(res);
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-            .finally(() => {
-                setLoading(false);
-            });
-    }, []);
+        getProducts().then(item => {
+            setProducts(item)
+        }).catch(err  => {
+            console.log(err)
+        })
 
-    return(
+        return (() => {
+            setProducts()
+        })          
+    }, [])
+    
+    return (
         <div>
-            <h2 className='greeting'>
-            {greeting}
-            </h2>
-            <ItemList products = {products}/>
+            <ItemList products={products}/>
         </div>
-        
-    )
-  
+    )    
     
 }
 export default ItemListContainer
+

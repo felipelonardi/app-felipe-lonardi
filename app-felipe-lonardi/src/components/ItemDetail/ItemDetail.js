@@ -2,6 +2,12 @@ import Item from "../Item/Item"
 import './ItemDetail.css'
 import FunctionCounter from "../Counter/counter";
 
+
+
+
+
+
+
 const ItemDetail = (product) =>{
 
     return(

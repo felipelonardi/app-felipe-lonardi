@@ -1,18 +1,56 @@
+
+import { useState, useEffect } from 'react'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import { getProduct } from '../products/product'
+import { useParams } from 'react-router-dom'
+
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState()
+    const { productId } = useParams()
+    
+
+    useEffect(() => {
+        getProduct(productId).then(item => {
+            setProduct(item)
+        }).catch(err  => {
+            console.log(err)
+        })
+
+        return (() => {
+            setProduct()
+        })
+
+    }, [productId])
+
+
+    return (
+        <div>
+            <ItemDetail product={product}/>
+        </div>
+    )    
+}
+export default ItemDetailContainer
+
+/*
 import React from 'react'
 import { useEffect, useState } from 'react';
 import FunctionCounter from '../Counter/counter'
 import { products } from '../products/product'
-import { traerProducto } from '../products/product'
+import { getProduct } from '../products/product'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Item from '../Item/Item'
+import { useParams } from 'react-router-dom';
+
 
 const ItemDetailContainer = ({greeting}) => {
 
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
+    const {productId} = useParams ()
+    
 
     useEffect(() => {
-        traerProducto
+        getProduct(product.Id)
             .then((res) => {
                 setProduct(res);
             })
@@ -26,10 +64,7 @@ const ItemDetailContainer = ({greeting}) => {
 
     return(
         <div>
-            <h2 className='greeting'>
-            {greeting}
-            </h2>
-            <ItemDetail products = {products}/>
+            <ItemDetail product = {product}/>
         </div>
         
     )
@@ -37,3 +72,5 @@ const ItemDetailContainer = ({greeting}) => {
     
 }
 export default ItemDetailContainer
+
+*/

@@ -38,9 +38,10 @@
 
 .a{
     position: relative;
-    left: 50%;
+    left: 20%;
     text-decoration: none;
     color: black;
+    padding: 75px;
 
 }
 .li{
@@ -53,3 +54,4 @@
     position: relative;
     left: 100px;
 }
+

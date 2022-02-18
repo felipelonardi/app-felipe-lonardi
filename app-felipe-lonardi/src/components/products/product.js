@@ -28,16 +28,19 @@ export const products = [
 ];
 console.log(products);
 
-export const traerProductos = new Promise ((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve(products);
-    },2000);
-});
+export const getProducts = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products)
+        }, 1000)
+    })
+}
 
-export const traerProducto = new Promise((resolve, reject) =>{
-    setTimeout(()=>{
-        resolve(products[2])
-    },2000);
-})
-
- 
+export const getProduct = (id) => {
+    return new Promise((resolve) => {
+        const prod = products.find(p => p.id === parseInt(id))
+        setTimeout(() => {
+            resolve(prod)
+        }, 1000)
+    })
+}
