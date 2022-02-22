@@ -2,6 +2,7 @@ import './NavBar.css'
 import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import {NavLink, Link} from 'react-router-dom'
+import { getCategories } from '../products/product';
 
 
 const Navbar = () => {
@@ -12,9 +13,9 @@ const Navbar = () => {
           </div>
           <div>
               <ul className = 'List'>
-              <li> <NavLink to={'/category/tienda'} className="a" >Tienda</NavLink></li>
-              <li><NavLink to={'/category/envios'} className="a" >Envios</NavLink></li>
-              <li><NavLink to={'/category/servicios'} className="a" >Servicios</NavLink></li>
+              <li> <NavLink to={'/category/airforce'} className="a" >Air Force</NavLink></li>
+              <li><NavLink to={'/category/sb'} className="a" >Sb</NavLink></li>
+              <li><NavLink to={'/category/airjordan'} className="a" >Air Jordan</NavLink></li>
 
               </ul>
           </div>

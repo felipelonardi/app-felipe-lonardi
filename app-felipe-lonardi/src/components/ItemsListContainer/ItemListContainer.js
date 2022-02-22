@@ -2,25 +2,25 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import './ItemListContainer.css'
-import { getProducts } from '../products/product'
+import { getCategories } from '../products/product'
 import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([])
+    const {categoryId} = useParams()
 
     
     useEffect(() => {
-        getProducts().then(item => {
+        getCategories(categoryId).then(item => {
             setProducts(item)
         }).catch(err  => {
             console.log(err)
         })
 
-        return (() => {
-            setProducts()
-        })          
-    }, [])
+        
+    }, [categoryId])
     
     return (
         <div>
