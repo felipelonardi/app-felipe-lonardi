@@ -36,7 +36,7 @@ export const products = [
         price: 26500,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/65da83e6-b392-4b0e-b46d-e758ca1b7d7d/nike-snkrs-calendario-de-fechas-de-lanzamientos.png",
         category: 'airjordan',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  'Usalas por la noche y estarás en modo sigiloso, pero ¿si te descubre el cielo iluminado por la luna? Tus pasos combinarán con lo que ves arriba.'
 
     },
 
@@ -47,7 +47,7 @@ export const products = [
         price: 18800,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/58905e11-0978-4afe-8997-607f76f8d638/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
         category: 'sb',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  'Creadas originalmente para las canchas, las Dunk salieron a la calle y, como dicen, el resto es historia. Más de 35 años después de su debut, la silueta aún ofrece un estilo audaz y desafiante.'
 
     },
     {
@@ -57,7 +57,7 @@ export const products = [
         price: 19000,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/dc5395c2-5262-4183-8674-6c56dd8f0d06/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
         category: 'sb',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  ' Creada para la cancha pero llevado a la calle, el ícono de los 80 regresa con superposiciones perfectamente brillantes y colores clásicos del equipo. Con su diseño icónico, la Nike Dunk Low canaliza la época de los 80 de vuelta a las calles, mientras que su cuello acolchado te permite llevar tu juego con comodidad a cualquier parte'
 
     },
     {
@@ -67,7 +67,7 @@ export const products = [
         price: 26500,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/2866324b-80da-4b46-8b53-0ad02b69c2cd/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
         category: 'airforce',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  'Experimenta lo extraordinario con la AF1 Experimental. El ícono cultural, que mantiene todo lo que más te gusta y le da un giro, tiene un tratamiento de sellado al vacío para crear un acabado único que querrás lucir.'
 
     },
     {
@@ -77,7 +77,7 @@ export const products = [
         price: 23200,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/cd51bc6d-843f-4e1a-9f8f-dc26311bf15d/nike-snkrs-calendario-de-fechas-de-lanzamientos.jpg",
         category: 'airforce',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  'En la década de los 90, los 2000 y más allá, la Air Force 1 ha sido un lienzo para la expresión a través del color y los materiales.'
 
     },
     
@@ -88,7 +88,7 @@ export const products = [
         price: 24300,
         img:  "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_600,c_limit/e908dc88-cb25-4272-9df0-3ef2545e383a/nike-snkrs-calendario-de-fechas-de-lanzamientos.png",
         category: 'airjordan',
-        description :  'El Air Jordan 1 es una de las zapatillas más vendidas de Nike en relación con la practica del baloncesto, desde sus orígenes siempre ha destacado por su gran versatilidad sobre la pista de basket. Adaptándose a diversos estilos de juegos y deslumbrando por su calidad.'
+        description :  'Más de 35 años después de su lanzamiento, la Air Jordan 1 todavía se considera un diseño atemporal y versátil que combina con cualquier estilo.'
 
     },
     

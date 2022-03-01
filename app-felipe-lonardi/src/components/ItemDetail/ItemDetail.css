@@ -31,3 +31,32 @@
     margin-right: 40px;
     text-align: center;
 }   
+.precio {
+    font-family: "Didact Gothic";
+    font-weight: bold;
+}
+
+.function{
+    position: relative;
+    left: 40px;
+}
+.checkout{
+
+        position: relative;
+        bottom: 50px;
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        font-family: "Didact Gothic";
+        font-size: x-large;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: ease-in 0.1s;
+    
+    
+}
+
+.checkout:hover{
+    background-color: black;
+    color: white;
+}
