@@ -3,9 +3,9 @@ import './App.css';
 import Navbar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemsListContainer/ItemListContainer';
 import CartWidget from './components/CartWidget/CartWidget';
-
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartContext } from "./context/CartContext";
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
   return (
 
     <div className="App">
+      <CartContext>
       <BrowserRouter>
           <Navbar />
             <Routes>
@@ -20,13 +21,14 @@ function App() {
                 <Route path='/about' element={<h1>About</h1>} />
                 <Route path='/category/:categoryId' element={<ItemListContainer />}/>
                 <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
+                <Route path='/cart' element={<h1>Cart</h1>}/> 
+
             </Routes>
             
-       </BrowserRouter>  
-
-      
+       </BrowserRouter> 
+       </CartContext>
     </div>
-
+      
   );
 }
 
